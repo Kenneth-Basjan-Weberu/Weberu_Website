@@ -20,7 +20,7 @@ const App = () => {
       pauseOnHover
       theme="dark"
     />
-    <div className='mx-10'>
+    <div className='mx-10 mb-10'>
       <Navbar/>
       <Hero/>
     </div>
