@@ -12,6 +12,9 @@ const Hero = () => {
         <div>
             <HeroSlider/>
         </div>
+        <div className="">
+          
+        </div>
     </div>
   );
 }
