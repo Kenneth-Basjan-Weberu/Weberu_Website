@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../index.css';
 import webDev from '../assets/website-development.jpg';
+import video from '../assets/video-editing.jpg'
+import dreads from '../assets/Color Stock Images/dreads-color.png'
 
 const slidesData = [
   {
@@ -11,21 +13,21 @@ const slidesData = [
     title: 'Website Development',
     description: 'This is the description for slide 1.',
     buttonLabel: 'Learn More',
-    id: 1,
+    index: 1,
   },
   {
-    imageUrl: webDev,
-    title: 'Graphics Design',
+    imageUrl: video,
+    title: 'Video Editing',
     description: 'This is the description for slide 2.',
     buttonLabel: 'Learn More',
-    id: 2,
+    index: 2,
   },
   {
-    imageUrl: webDev,
+    imageUrl: dreads,
     title: 'Marketing',
     description: 'This is the description for slide 3.',
     buttonLabel: 'Learn More',
-    id: 3,
+    index: 3,
   },
   // Add more slides as needed
 ];
@@ -55,12 +57,11 @@ const HeroSlider = () => {
   const progressBarWidth = `${(1 / slidesData.length) * 100}%`;
 
   return (
-    <div className="hero-slider">
+    <div className="hero-slider rounded">
       <Slider {...settings}>
-        {slidesData.map((slide, id) => (
-          <div key={id} className="slider-item" style={{ backgroundImage: `url("${slide.imageUrl}")` }}>
-            <div className="slider-content">
-              <img src={slide.imageUrl}/>
+        {slidesData.map((slide, index) => (
+          <div key={index} className="slider-item">
+            <div className="slider-content" style={{ backgroundImage: `url("${slide.imageUrl}")` }}>
               <h4>{slide.title}</h4>
               <p>{slide.description}</p>
               <button>{slide.buttonLabel}</button>
