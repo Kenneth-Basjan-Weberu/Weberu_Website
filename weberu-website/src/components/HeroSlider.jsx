@@ -57,7 +57,7 @@ const HeroSlider = () => {
   const progressBarWidth = `${(1 / slidesData.length) * 100}%`;
 
   return (
-    <div className="hero-slider rounded">
+    <div className="hero-slider rounded h-32">
       <Slider {...settings}>
         {slidesData.map((slide, index) => (
           <div key={index} className="slider-item">

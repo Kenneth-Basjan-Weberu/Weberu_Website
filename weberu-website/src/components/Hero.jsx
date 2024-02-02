@@ -16,12 +16,12 @@ const Hero = () => {
           <HeroSlider/>
       </div>
       {/* Card */}
-      <div className="uppercase flex space-x-5 justify-center">
+      <div className="uppercase flex space-x-5 justify-center bg-[#57575759] items-center p-10 font-bold text-5xl rounded-full">
         <h1>We listen</h1>
-        <SlGlobe />
+        <SlGlobe className='text-[#ffa500]'/>
         <h1>We build</h1>
-        <SlGlobe />
-        <h1>We are weberu.</h1>
+        <SlGlobe className='text-[#ffa500]'/>
+        <h1>We are weberu<span className='text-[#ffa500]'>.</span></h1>
       </div>
     </div>
   );
