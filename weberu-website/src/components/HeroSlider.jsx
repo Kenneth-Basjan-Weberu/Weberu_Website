@@ -6,6 +6,7 @@ import '../index.css';
 import webDev from '../assets/website-development.jpg';
 import video from '../assets/video-editing.jpg'
 import dreads from '../assets/Color Stock Images/dreads-color.png'
+import { LuArrowUpRight } from "react-icons/lu";
 
 const slidesData = [
   {
@@ -54,23 +55,23 @@ const HeroSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const progressBarWidth = `${(1 / slidesData.length) * 100}%`;
+  // const progressBarWidth = `${(1 / slidesData.length) * 100}%`;
 
   return (
-    <div className="hero-slider rounded h-32">
+    <div className="hero-slider">
       <Slider {...settings}>
         {slidesData.map((slide, index) => (
           <div key={index} className="slider-item">
-            <div className="slider-content" style={{ backgroundImage: `url("${slide.imageUrl}")` }}>
-              <h4>{slide.title}</h4>
+            <div className="slider-content h-full rounded-[5%] items-start uppercase flex flex-col justify-end pl-10" style={{ backgroundImage: `url("${slide.imageUrl}")`, objectFit: 'contain' }}>
+              <h4 className='font-bold text-5xl'>{slide.title}</h4>
               <p>{slide.description}</p>
-              <button>{slide.buttonLabel}</button>
+              <button className='text-black font-bold px-10 mt-5 mb-20 hover:border-[#ffa500] hover:cursor-pointer flex flex-row items-center hover:text-[#ffa500]'>{slide.buttonLabel}<LuArrowUpRight className='ml-1 text-lg'/></button>
             </div>
           </div>
         ))}
       </Slider>
 
-      <div className="progress-bar-container">
+      {/* <div className="progress-bar-container">
         {slidesData.map((_, index) => (
           <div
             key={index}
@@ -79,7 +80,7 @@ const HeroSlider = () => {
             onClick={() => setCurrentSlide(index)}
           ></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

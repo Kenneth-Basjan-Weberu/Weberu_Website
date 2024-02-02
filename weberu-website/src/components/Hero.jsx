@@ -12,7 +12,7 @@ const Hero = () => {
           <p className='text-2xl text-center'>Building your dream business seamlessly with tech</p>
       </div>
       {/* Slider */}
-      <div>
+      <div className='my-8'>
           <HeroSlider/>
       </div>
       {/* Card */}
