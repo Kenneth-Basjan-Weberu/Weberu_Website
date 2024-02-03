@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../index.css';
 import webDev from '../assets/website-development.jpg';
 import video from '../assets/video-editing.jpg'
-import dreads from '../assets/Color Stock Images/dreads-color.png'
+import v1 from '../assets/v1.jpg'
+import dreads from '../assets/color-stock-images/dreads-color.png'
 import { LuArrowUpRight } from "react-icons/lu";
 
 const slidesData = [
@@ -17,7 +18,7 @@ const slidesData = [
     index: 1,
   },
   {
-    imageUrl: video,
+    imageUrl: v1,
     title: 'Video Editing',
     description: 'This is the description for slide 2.',
     buttonLabel: 'Learn More',
