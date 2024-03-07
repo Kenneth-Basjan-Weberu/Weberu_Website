@@ -9,12 +9,12 @@ const Navbar = () => {
       {/* Left Section */}
       <div className="">
         <ul className='uppercase flex justify-between space-x-32 '>
-          <li><Link className='text-white hover:text-[#ffa500] font-medium text-4xl hover:cursor-pointer'>about</Link></li>
+          <li><Link className='text-white hover:text-[#ffa500] font-medium text-3xl hover:cursor-pointer'>about</Link></li>
         </ul>
       </div>
       <div className="">
         <ul className='uppercase flex justify-between space-x-32 '>
-          <li><Link className='text-white hover:text-[#ffa500] font-medium text-4xl hover:cursor-pointer'>work</Link></li>
+          <li><Link className='text-white hover:text-[#ffa500] font-medium text-3xl hover:cursor-pointer'>work</Link></li>
         </ul>
       </div>
       {/* Middle Section */}
@@ -22,7 +22,7 @@ const Navbar = () => {
         <img 
           src={logo} 
           alt="Weberu" 
-          className='w-32 h-auto'/>
+          className='w-28 h-auto'/>
       </div>
       {/* <div className="logo">
           <ul>
@@ -32,12 +32,12 @@ const Navbar = () => {
       {/* Right Section */}
       <div className="">
         <ul className='uppercase flex justify-between space-x-32'>
-          <li><Link className='text-white hover:text-[#ffa500] font-medium text-4xl hover:cursor-pointer'>services</Link></li>
+          <li><Link className='text-white hover:text-[#ffa500] font-medium text-3xl hover:cursor-pointer'>services</Link></li>
         </ul>
       </div>
       <div className="">
         <ul className='uppercase flex justify-between space-x-32'>
-          <li><Link className='text-white hover:text-[#ffa500] font-medium text-4xl hover:cursor-pointer'>contact</Link></li>
+          <li><Link className='text-white hover:text-[#ffa500] font-medium text-3xl hover:cursor-pointer'>contact</Link></li>
         </ul>
       </div>
     </div>

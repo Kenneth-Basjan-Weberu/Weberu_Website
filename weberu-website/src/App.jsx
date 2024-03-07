@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero } from './components';
+import { Navbar, Hero, Work } from './components';
 import './index.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -23,6 +23,7 @@ const App = () => {
     <div className='mx-10 mb-10'>
       <Navbar/>
       <Hero/>
+      <Work/>
     </div>
     </BrowserRouter>
     
