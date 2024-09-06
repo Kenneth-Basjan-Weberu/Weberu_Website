@@ -2,6 +2,7 @@ import React from 'react'
 import billiard from '../assets/clients/billiard-man.png'
 import tbm_favicon from '../assets/favicon/billiard-man-logo.png'
 import { WiStars } from "react-icons/wi";
+import { LuCode2 } from "react-icons/lu";
 import Button1 from './Button1'
 import { Link } from 'react-scroll'
 
@@ -13,6 +14,9 @@ const Work = () => {
         data-aos-duration="1000"
         >
         
+        <div className='flex items-center space-x-1 text-2xl'>
+          <LuCode2 className='text-[#ffa500] font-bold'/><div className="uppercase">selected projects</div>
+        </div>
 
         {/* Past Work Cards */}
         {/* Card 1 */}
@@ -26,8 +30,8 @@ const Work = () => {
               <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
               <defs>
                 <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                  <stop stopColor="#7775D6" />
-                  <stop offset={1} stopColor="#E935C1" />
+                  <stop stopColor="#ffffff" />
+                  <stop offset={1} stopColor="#ffffff" />
                 </radialGradient>
               </defs>
             </svg>
